@@ -17,30 +17,30 @@ body{
 
 @keyframes transition{
     0% {
-        background-image: url("../svg/50646.gif");
+        background-image: url("../svg/animation_acceuil_1.gif");
         opacity: 0;
         transform: scaleY(0);
     }
     17% {
-        background-image: url("../svg/50646.gif");
+        background-image: url("../svg/animation_acceuil_1.gif");
         opacity: 0.1;
 		transform: scaley(0.1);
 	}
 
     24% {
-        background-image: url("../svg/50646.gif");
+        background-image: url("../svg/animation_acceuil_1.gif");
         opacity: 0.2;
 		transform: scaley(0.2);
 		animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
     }
     46% {
-        background-image: url("../svg/50646.gif");
+        background-image: url("../svg/animation_acceuil_1.gif");
         opacity: 0.4;
 		transform: scaley(0.50);
 		animation-timing-function: cubic-bezier(0.25, 0.25, 1);
 	}
     66% {
-        background-image: url("../svg/50646.gif");
+        background-image: url("../svg/animation_acceuil_1.gif");
         opacity: 0.6;
 		transform: scaley(0.70);
 		animation-timing-function: cubic-bezier(0.25, 0.25, 1);
