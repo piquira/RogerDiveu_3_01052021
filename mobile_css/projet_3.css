@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/* ecran mobile entre 358à 414 px */
+.bloc_page {
+  max-width: 450px;
+  min-width: 200px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 0.9rem;
+  margin: 0px;
+  animation: transition 3s;
+}
+
+/* animation changement de page acceuil */
+@keyframes transition {
+  0% {
+    background-image: url("../svg/50646.gif");
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  17% {
+    background-image: url("../svg/50646.gif");
+    opacity: 0.1;
+    transform: scaley(0.1);
+  }
+  24% {
+    background-image: url("../svg/50646.gif");
+    opacity: 0.2;
+    transform: scaley(0.2);
+    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+  }
+  46% {
+    background-image: url("../svg/50646.gif");
+    opacity: 0.4;
+    transform: scaley(0.5);
+    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+  }
+  66% {
+    background-image: url("../svg/50646.gif");
+    opacity: 0.6;
+    transform: scaley(0.7);
+    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scaley(1);
+  }
+}
+
+.fonction__liste, .fonction__liste--3, .restaurant__figure {
+  box-shadow: 4px 4px 4px #f0e8e8;
+}
+
+h1 {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 0;
+  font-size: 1.7rem;
+}
+
+h1 + p {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h2 {
+  margin-left: 1.4rem;
+  text-align: left;
+  /*ordi non */
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h4 {
+  margin: 0.5rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding: 1.5rem 0rem 1rem 0rem;
+  margin: 0rem;
+  /*ordi non */
+}
+
+h6 {
+  margin: 1rem 0rem 0.2rem 1rem;
+  font-size: 1rem;
+  text-align: left;
+  /*ordi non */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h6 + p {
+  /*ordi non */
+  padding-left: 1rem;
+  text-align: left;
+  margin-top: 0;
+}
+
+header {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.entete__logo {
+  background-color: #ffffff;
+}
+
+.entete__logo .entete__logo--image {
+  width: 50%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.entete__logo--local {
+  background: linear-gradient(0deg, #eaeaea, #eaeaea 90%, #dbd8d8);
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+  width: 100%;
+  align-items: center;
+}
+
+.btn--gris {
+  background-color: #eaeaea;
+  color: black;
+  font-family: roboto;
+  font-weight: 500;
+  padding-left: 0.7rem;
+}
+
+.entete__logo--btn {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+/* animation bouton commander */
+.btn--violet {
+  background: linear-gradient(-4deg, #9356DC, #ff79DA);
+  border-radius: 30px;
+  padding: 15px 35px 15px 35px;
+  margin-top: 1.3rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-weight: 500;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn--violet:hover {
+  background: linear-gradient(4deg, #9356DC, #ff79DA);
+  box-shadow: #7e7e7e 4px 4px 10px;
+}
+
+.picto {
+  margin: 0.5rem 2rem 0rem -0.9rem;
+  padding: 0;
+  color: #7e7e7e;
+}
+
+.picto_2 {
+  margin: 0.5rem 2rem 0rem -1.8rem;
+  padding: 0;
+  color: #7e7e7e;
+}
+
+.picto_3 {
+  margin: 0.5rem 2rem 0rem -1.8rem;
+  padding: 0;
+  color: #9356DC;
+}
+
+.fonction {
+  margin: 2.5rem 0rem 2.5rem 0rem;
+}
+
+.fonction .fonction__descriptif {
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fonction__numero {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 1rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.fonction__liste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 5rem;
+  border-radius: 0.7rem;
+  background-color: #f6f6f6;
+  margin-left: -0.8rem;
+  margin-bottom: 0.5rem;
+  padding: initial;
+}
+
+.fonction__liste--3 {
+  background-color: #f5edff;
+}
+
+.fonction__restaurant {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #f6f6f6;
+}
+
+.restaurant__carte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*ordi non */
+}
+
+.lanote {
+  width: 100%;
+}
+
+.restaurant__figure {
+  background-color: white;
+  border-radius: 13px;
+  margin: 10px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  /*ordi 80%*/
+}
+
+.restaurant__figure--img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  display: flex;
+}
+
+.restaurant__figure--texteimage {
+  display: flex;
+  position: relative;
+}
+
+.image__texte {
+  background: #99e2d0;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  right: 5%;
+  /* ordi non */
+  top: 10%;
+  color: #008766;
+  width: 4.5rem;
+  /* ordi non */
+  height: 2rem;
+}
+
+.restaurant__figure--texte {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  padding-left: 0.5rem;
+}
+
+/* animation picto changement de couleur */
+.restaurant__figure--picto {
+  padding: 2rem 0.8rem 0rem 0rem;
+  /* ordi non */
+  height: 1rem;
+  width: 1rem;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  background: url("../svg/favorite-heart-outline-button.svg") no-repeat;
+  background-position: center;
+  background-size: 1.2rem;
+}
+
+.restaurant__figure--picto:hover {
+  background-image: url("../svg/favorite-heart-button.svg");
+}
+
+footer {
+  background-color: #353535;
+}
+
+p > a {
+  text-decoration: none;
+  color: white;
+}
+
+.piedpage {
+  color: white;
+  margin-left: 1.4rem;
+  display: flex;
+  /*ordi non */
+  flex-direction: column;
+  align-items: start;
+}
+
+.piedpage__propo {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+.far {
+  font-size: 0.6rem;
+}
+
+.piedpage__propo--p {
+  margin: 0rem;
+  padding-left: 0.5rem;
+}
+
+.piedpage__propo--para {
+  margin: 0rem;
+  padding-left: 0rem;
+}
+/*# sourceMappingURL=projet_3.css.map */

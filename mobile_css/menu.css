@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* ecran mobile entre 0 à 414 px */
+.bloc_page {
+  max-width: 450px;
+}
+
+/* animation chargement menu délai */
+.chargement__1 {
+  animation: transition 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
+  animation-delay: 200ms;
+  width: initial;
+  margin-left: initial;
+}
+
+.chargement__2 {
+  animation: transition 1.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
+  animation-delay: 400ms;
+  width: initial;
+  margin-left: initial;
+}
+
+.chargement__3 {
+  animation: transition 1.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
+  animation-delay: 600ms;
+  width: initial;
+  margin-left: initial;
+}
+
+@keyframes transition {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 0.9rem;
+  margin: 0px;
+}
+
+.plat {
+  box-shadow: 4px 4px 4px #f0e8e8;
+}
+
+h1 {
+  text-transform: lowercase;
+  font-family: 'Shrikhand', cursive;
+  padding-left: 1.4rem;
+  margin: 2rem 0rem 0rem 0rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.majuscule {
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid #99e2d0;
+  width: 11%;
+  margin-left: 1.4rem;
+  margin-top: 2rem;
+  padding-bottom: 5px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h3 {
+  margin: 0px;
+  padding: 0.7rem 0rem 0.2rem 0.6rem;
+}
+
+h5 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding: 1.5rem 0rem 1rem 0rem;
+  margin: 0rem;
+}
+
+p {
+  font-size: 0.9rem;
+  padding: 0rem 0rem 0.3rem 0.6rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p > a {
+  text-decoration: none;
+  color: white;
+}
+
+.gris {
+  background-color: #f6f6f6;
+}
+
+.violet {
+  color: #9356DC;
+}
+
+.entete__logo {
+  display: flex;
+  justify-content: center;
+  margin: initial;
+}
+
+.entete__logo .entete__logo--image {
+  width: 50%;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.entete__logo .entete__logo--picto {
+  position: absolute;
+  top: 1.7rem;
+  left: 1.4rem;
+  font-size: 1.2rem;
+  color: #353535;
+}
+
+.restaurant__figure--img {
+  width: 100%;
+  height: 15rem;
+}
+
+article {
+  background-color: #f6f6f6;
+  border-radius: 2rem 2rem 0rem 0rem;
+  height: auto;
+  position: relative;
+  top: -2rem;
+}
+
+.entete__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: initial;
+  /* ecran ordinateur non */
+}
+
+/* animation picto changement de couleur */
+.restaurant__figure--picto {
+  display: flex;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  height: 1.3rem;
+  width: 1.3rem;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  background: url("../svg/favorite-heart-outline-button.svg") no-repeat;
+  background-position: center;
+  background-size: 1.3rem;
+  opacity: 0.5;
+}
+
+.restaurant__figure--picto:hover {
+  background-image: url("../svg/favorite-heart-button.svg");
+  animation: coeur 1s;
+}
+
+@keyframes coeur {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* animation bouton commander */
+.commander {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.btn--violet {
+  background: linear-gradient(-4deg, #9356DC, #ff79DA);
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+  margin-top: 0.9rem;
+  margin-bottom: 4rem;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn--violet:hover {
+  background: linear-gradient(4deg, #9356DC, #ff79DA);
+  box-shadow: #7e7e7e 4px 4px 10px;
+}
+
+footer {
+  background-color: #353535;
+}
+
+.piedpage {
+  color: white;
+  margin-left: 1.4rem;
+  margin-top: -2rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  /* ecran ordi non */
+  flex-direction: column;
+  align-items: start;
+}
+
+.piedpage .piedpage__propo {
+  display: flex;
+  align-items: center;
+  height: 1.5rem;
+}
+
+.piedpage .far {
+  font-size: 0.6rem;
+}
+
+.piedpage .piedpage__propo--p {
+  margin: 0rem;
+  padding-left: 0.5rem;
+}
+
+.piedpage .piedpage__propo--para {
+  margin: 0rem;
+  padding-left: 0rem;
+}
+
+/* animation ligne menu et apparation picto sur fond vert */
+.plat {
+  margin: 0rem 0.6rem 0.8rem 0.6rem;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: initial;
+  /* ecran ordi non */
+}
+
+.plat .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 100px;
+}
+
+.plat .details h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: all 1s;
+  font-weight: 500;
+}
+
+.plat .info {
+  display: flex;
+}
+
+.plat .info .description {
+  min-width: 200px;
+  margin: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: all 1s;
+  font-size: 0.8rem;
+}
+
+.plat .info .prix {
+  margin: 0rem 1.2rem 0.3rem 0em;
+  padding-left: 0.2rem;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.plat .animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  flex-shrink: 1;
+  width: 0px;
+  border-radius: 0 10px 10px 0;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.animation-picto {
+  background: url("../svg/check.svg") no-repeat;
+  background-position: center;
+  background-size: 1rem;
+  width: 30px;
+  height: 30px;
+  transform: rotate(90deg);
+  transition: all 1s;
+}
+
+.plat:hover .description {
+  width: 200px;
+}
+
+.plat:hover .animation {
+  width: 90px;
+}
+
+.plat:hover .animation-picto {
+  transform: rotate(360deg);
+}
+/*# sourceMappingURL=menu.css.map */

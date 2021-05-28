@@ -1,0 +1,325 @@
+/* ecran ordinateur jusque 1270 px */
+
+.bloc_page{
+    max-width: 1270px;   /* ecran mobile non */
+    margin: auto;
+}
+
+/* animation chargement menu délai */
+
+.chargement__1 {
+    animation: transition 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
+          animation-delay: 200ms;
+          /* ecran mobile non */  
+    width: 70%;
+    margin-left: 15%;
+}
+.chargement__2 {
+    animation: transition 1.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
+          animation-delay: 400ms;
+
+          /* ecran mobile non */  
+    width: 70%;
+    margin-left: 15%;
+}
+.chargement__3 {
+    animation: transition 1.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
+          animation-delay: 600ms;
+
+          /* ecran mobile non */  
+    width: 70%;
+    margin-left: 15%;
+}
+
+@keyframes transition{
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);  
+    }
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1.1rem;  /* ecran mobile non */
+    margin:0px;
+}
+
+%boxshadow{
+    box-shadow: 4px 4px 4px #f0e8e8;
+}
+
+$primaire-color: #9356DC;
+
+$secondaire-color: #ff79DA;
+
+$tertiaire-color: #99e2d0;
+
+$grisfond-color:#f6f6f6;
+
+$picto-color :#7e7e7e;
+
+
+h1{
+    text-transform: lowercase;
+    font-family: 'Shrikhand', cursive;
+    font-size: 2rem;
+    font-weight: 300;                   
+}
+
+.majuscule{
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;  /* ecran mobile non */
+     width: 100%;
+     border-bottom: 0.2rem solid $tertiaire-color;
+}
+
+h3{
+    margin: 0px;
+    padding-left: 0.6rem;
+    padding-top: 0.3rem;
+  }
+
+h5{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding:1.5rem 0rem 1rem 0rem;
+    margin:0rem;
+}
+
+p{
+    font-size: 0.9rem;  
+    padding-left: 0.6rem;      /* ecran mobile non */
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}    
+
+p > a{
+    text-decoration: none;
+    color:white;
+}
+
+.gris {
+    background-color: $grisfond-color; 
+}
+
+.violet{
+    color:$primaire-color;
+}
+
+.entete__logo{
+    display: flex;
+    justify-content: center; /* ecran mobile non */
+    align-items: center;
+    margin:1rem 0rem 1rem 2rem;  
+    
+    .entete__logo--picto{
+        top:2rem;
+        margin-right:20px;
+        font-size: 2rem;
+        color: #353535;
+    }
+}
+ 
+.restaurant__figure--img{
+            width: 100%;
+             height: 30rem; /* ecran mobile non */
+            }
+
+article{
+    background-color:$grisfond-color;
+    border-radius: 2rem 2rem 0rem 0rem;
+    height: auto;
+    position:relative;
+    top:-2rem;
+    }
+
+.entete__menu{
+    display:flex;
+    align-items: center;
+    flex-direction: column;          /* ecran mobile non */
+}  
+
+/* animation picto changement de couleur */   
+
+.restaurant__figure--picto{
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+    background: url("../svg/favorite-heart-outline-button.svg") no-repeat;
+    background-position: center;
+    background-size: 1.8rem;
+
+    &:hover{
+    background-image: url("../svg/favorite-heart-button.svg");
+    animation: coeur 1s;
+    }
+}
+
+
+@keyframes coeur{
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity:0.5;
+    }
+
+    100%{
+        opacity: 1;  
+    }
+}
+
+/* animation bouton commander */
+.commander{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    }
+
+.btn--violet{
+    background: linear-gradient(-4deg,$primaire-color,$secondaire-color);
+    border-radius: 20px;
+    padding:10px 40px 10px 40px;
+    margin-top: 1.3rem;
+    margin-bottom: 2.5rem;
+    color:white;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s; 
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+ 
+    &:hover {
+    background: linear-gradient(4deg,$primaire-color,$secondaire-color);
+    box-shadow: #7e7e7e 4px 4px 10px;
+    } 
+}
+footer{
+    background-color: #353535;
+}
+
+.piedpage{
+    color:white;
+    margin-left: 1.4rem;
+    margin-top: -2rem;
+    display: flex;                /* ecran mobile non */                      
+    flex-direction: column;
+    align-items: center;
+
+    .piedpage__propo{
+        display:flex;
+        align-items: center;
+        height: 2rem;
+    }
+        .piedpage__propo--para{
+            margin:0rem;
+            padding-left:0rem
+        }  
+ }
+
+ 
+ /* animation ligne menu et apparation picto sur fond vert */       
+            
+.plat{   
+    margin: 0rem 0.6rem 0.8rem 0.6rem;
+    display: flex;
+    background-color: #ffffff;
+    @extend %boxshadow;
+    border-radius: 10px;
+    height: 4rem;           /* ecran mobile non */   
+    }
+        
+        .plat .details{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            min-width: 100px;
+        }
+        
+        .plat .details h3{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            transition:all 1s;
+        }
+        
+        .plat .info{
+            display: flex;
+            justify-content: space-between;  /* ecran mobile non */
+        }
+        
+        .plat .info .description{
+              
+            margin:0px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            transition:all 1s;
+        }
+        
+        .plat .info .prix{
+            margin:0rem 1.2rem 0.3rem 0em;
+            padding-left: 7rem;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+    
+.plat .animation{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $tertiaire-color;
+    flex-shrink: 1;
+    width: 0px;
+    border-radius: 0 10px 10px 0;
+    transition: all 1s;
+    overflow: hidden;  
+}    
+        
+    .animation-picto {
+        background: url("../svg/check.svg") no-repeat;
+        background-position: center;
+        background-size: 1rem;
+         width: 30px;
+        height: 30px;
+        transform: rotate(90deg);
+         transition: all 1s;
+         }   
+        
+        .plat:hover .description
+        {
+            width: 200px;
+        }
+    
+        .plat:hover .animation
+        {
+            width: 90px;
+        }
+        
+        .plat:hover .animation-picto {
+            transform: rotate(360deg);
+        }
+
+
+        
+          
