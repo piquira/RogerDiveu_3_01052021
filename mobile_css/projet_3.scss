@@ -313,6 +313,7 @@ header{
 
     .restaurant__figure--picto:hover{
         background-image: url("../svg/favorite-heart-button.svg");
+        animation: coeur 1s;
     }
 
 
