@@ -1,7 +1,7 @@
 /* ecran mobile entre 0 à 414 px */
 
 .bloc_page{
-    max-width: 450px;
+    max-width: 499px;
 }
 
 /* animation chargement menu délai */
@@ -180,7 +180,6 @@ article{
     background: url("../svg/favorite-heart-outline-button.svg") no-repeat;
     background-position: center;
     background-size: 1.3rem;
-    opacity: 0.5;
 
     &:hover{
     background-image: url("../svg/favorite-heart-button.svg");
